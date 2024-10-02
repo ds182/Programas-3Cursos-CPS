@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programas</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #000000;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        h1 {
+            font-size: 3rem;
+            margin: 0; /* Eliminar el margen */
+            padding: 20px; /* Espacio alrededor del texto */
+            text-align: center;
+            width: 100%; /* Ancho completo */
+            background-image: url('https://i.ibb.co/44DDXyB/Dise-o-sin-t-tulo-17.png');
+            background-size: cover; /* Asegurarse de que la imagen cubra el área */
+            background-position: center;
+            border-radius: 10px; /* Bordes redondeados */
+        }
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            width: 100%;
+            max-width: 900px;
+            flex-wrap: wrap;
+            margin-top: 20px; /* Margen superior para separar del título */
+            margin-bottom: 30px; /* Margen inferior existente */
+        }
+        .button-container button {
+            padding: 15px;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: #1e90ff;
+            color: white;
+            transition: background-color 0.3s ease;
+            flex: 1;
+            max-width: 200px;
+        }
+        .button-container button:hover {
+            background-color: #104e8b;
+        }
+        .button-container button:active {
+            background-color: #39ff14; /* Color verde fosforescente al hacer clic */
+        }
+        .content-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            width: 100%;
+            max-width: 1200px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+        .left-container, .right-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            flex: 1;
+            min-width: 300px;
+            max-width: 600px;
+        }
+        .left-container {
+            flex-direction: column; /* Cambiado a columna para incluir el botón */
+            justify-content: center;
+        }
+        .left-container img {
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+        }
+        .right-container h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .right-container img {
+            width: 100%;
+            max-width: 660px;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 20px; /* Añadido margen inferior para separar del pie de página */
+        }
+        .full-width-button {
+            width: 100%;
+            padding: 15px;
+            font-size: 1.2rem;
+            background-color: #d5006d; /* Color rosa mexicano */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .full-width-button:hover {
+            background-color: #a4004f; /* Color de hover más oscuro */
+        }
+        .full-width-button:active {
+            background-color: #39ff14; /* Color verde fosforescente al hacer clic */
+        }
+        footer {
+            margin-top: auto; /* Asegurar que el pie de página esté al final */
+            padding: 10px 20px;
+            background-color: #1e1e1e; /* Color de fondo del pie de página */
+            width: 100%;
+            text-align: center;
+            font-size: 1rem;
+            color: #ffffff;
+            border-top: 1px solid #ffffff; /* Línea superior para separación */
+        }
+        .advantages {
+            margin-top: 20px;
+            font-size: 1rem;
+            line-height: 1.5;
+            text-align: left;
+            padding: 0 20px;
+        }
+        .advantages ul {
+            list-style-type: disc;
+            padding-left: 20px; /* Espacio para los puntos */
+        }
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            .button-container button {
+                max-width: 100%;
+                margin-bottom: 10px;
+            }
+            .content-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .left-container, .right-container {
+                max-width: 100%;
+                min-width: unset;
+            }
+        }
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+            .button-container button {
+                font-size: 1rem;
+            }
+            .left-container img {
+                width: 80px; /* Reducción del tamaño en pantallas pequeñas */
+                height: 80px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>PROGRAMAS</h1>
+    <div class="button-container">
+        <button onclick="window.location.href='https://ds182.github.io/Programa-Pre-B-sico/'">PRE - BASICO</button>
+        <button onclick="window.location.href='https://ds182.github.io/Programa-B-sico-A/'">BASICO A</button>
+        <button onclick="window.location.href='https://ds182.github.io/Programa-B-sico-B/'">BASICO B</button>
+    </div>
+
+    <div class="content-container">
+        <!-- Contenedor Izquierdo -->
+        <div class="left-container">
+            <div style="display: flex; gap: 10px;"> <!-- Flex para alinear imágenes horizontalmente -->
+                <img src="https://i.ibb.co/VLp3LC3/3.png" alt="Imagen 1">
+                <img src="https://i.ibb.co/WkH51Xq/1.png" alt="Imagen 2">
+                <img src="https://i.ibb.co/hmqMRXn/2.png" alt="Imagen 3">
+            </div>
+            <button class="full-width-button" onclick="window.location.href='https://ds182.github.io/soycps/'">¿Quién es "CPS"?</button> <!-- Botón actualizado -->
+            <div class="advantages">
+                <h3>Ventajas de aprender inglés:</h3>
+                <ul>
+                    <li>Mejora las oportunidades laborales.</li>
+                    <li>Facilita la comunicación en viajes.</li>
+                    <li>Acceso a información y cultura global.</li>
+                    <li>Mejora las habilidades cognitivas.</li>
+                    <li>Aumenta la confianza personal.</li>
+                </ul>
+            </div>
+        </div>
+        <!-- Contenedor Derecho -->
+        <div class="right-container">
+            <h2>¡"CPS" Esta contigo!</h2>
+            <img src="https://i.ibb.co/zSprg1B/Leonardo-Phoenix-A-highcontrast-cinematic-photograph-featuring-3.jpg" alt="Imagen derecha">
+        </div>
+    </div>
+
+    <footer>
+        © Todos los derechos reservados.
+    </footer>
+</body>
+</html>
